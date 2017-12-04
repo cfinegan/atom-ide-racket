@@ -1,0 +1,32 @@
+{
+  "name": "atom-ide-racket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Conor Finegan",
+  "license": "ISC",
+  "dependencies": {
+    "atom-languageclient": "^0.6.7"
+  },
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "enhancedScopes": [
+    "source.rkt"
+  ],
+  "providedServices": {
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
+    },
+    "code-highlight": {
+      "version": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    }
+  }
+}
