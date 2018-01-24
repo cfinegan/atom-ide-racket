@@ -17,15 +17,22 @@
   "enhancedScopes": [
     "source.rkt"
   ],
-  "providedServices": {
-    "code-format.range": {
+  "consumedServices": {
+    "linter-indie": {
       "versions": {
-        "0.1.0": "provideCodeFormat"
+        "2.0.0": "consumeLinterV2"
       }
     },
-    "code-highlight": {
-      "version": {
-        "0.1.0": "provideCodeHighlight"
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "providedServices": {
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
       }
     }
   }
