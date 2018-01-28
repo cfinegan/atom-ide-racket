@@ -39,6 +39,11 @@
       "versions": {
         "0.1.0": "provideCodeHighlight"
       }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
     }
   }
 }
