@@ -4,13 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "raco pkg install racket-langserver"
   },
   "author": "Conor Finegan",
-  "license": "ISC",
-  "dependencies": {
-    "atom-languageclient": "^0.6.7"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfinegan/atom-ide-racket.git"
   },
+  "dependencies": {
+    "atom-languageclient": "^0.6.7",
+    "atom-package-deps": "^4.6.1"
+  },
+  "package-deps": [
+    "atom-ide-ui:0.7.2",
+    "language-racket:0.4.0"
+  ],
   "engines": {
     "atom": ">=1.21.0"
   },
