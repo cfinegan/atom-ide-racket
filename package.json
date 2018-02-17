@@ -18,8 +18,8 @@
     "atom-package-deps": "^4.6.1"
   },
   "package-deps": [
-    "atom-ide-ui:0.7.2",
-    "language-racket:0.4.0"
+    "atom-ide-ui",
+    "language-racket"
   ],
   "engines": {
     "atom": ">=1.21.0"

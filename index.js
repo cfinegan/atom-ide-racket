@@ -1,4 +1,5 @@
 const { AutoLanguageClient } = require("atom-languageclient");
+const { install } = require("atom-package-deps");
 const cp = require("child_process");
 
 class RacketLanguageClient extends AutoLanguageClient {
@@ -19,6 +20,10 @@ class RacketLanguageClient extends AutoLanguageClient {
     const child = cp.spawn("racket", args, options);
     this.captureServerErrors(child);
     return child;
+  }
+  activate() {
+    super.activate();
+    install("atom-ide-racket");
   }
 }
 

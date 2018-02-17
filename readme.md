@@ -6,31 +6,16 @@ Racket language support for Atom-IDE, powered by
 
 ## Installation & Dependencies
 
-The following console commands should be sufficient for most configurations:
+`apm install atom-ide-racket` should be sufficient for most systems. The Atom packages `atom-ide-ui` and `language-racket` are dependencies and should be installed automatically if they are not already.
 
-```
-raco pkg install racket-langserver
-apm install language-racket
-apm install atom-ide-ui
-apm install atom-ide-racket
-```
-
-- `language-racket` provides an Atom grammar for Racket. The language server
-will not start unless it is installed.
-- `atom-ide-ui` is used by Atom to translate LSP messages into visible UI
-elements within the Atom interface. The language server will seem to fail
-silently unless this is installed.
-
-### Quick Install
-
-Bash users can simply paste the following line into the terminal to install all
-four packages:
-
-`raco pkg install racket-langserver && apm install atom-ide-racket && apm install language-racket && apm install atom-ide-ui`
+The Racket package `racket-langserver` is also a dependency and should be
+installed automatically via the npm *install* script. If the automatic
+installation fails, try installing it manually with
+`raco pkg install racket-langserver`.
 
 ## Troubleshooting
 
 Having issues? Open the Atom developer tools (`Ctrl+Shift+I` by default) and
 enter `atom.config.set("core.debugLSP", true);` into the console. After
 reloading Atom, you should be able to see all the debug info related to LSP, as
-well as the stderr of the language server.
+well as the language server's stderr
