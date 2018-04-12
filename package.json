@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "raco pkg install --skip-installed racket-langserver"
+    "install": "raco pkg install --auto --skip-installed racket-langserver"
   },
   "author": "Conor Finegan",
   "license": "MIT",
