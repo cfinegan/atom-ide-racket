@@ -59,6 +59,11 @@
       "versions": {
         "0.1.0": "provideDefinitions"
       }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
     }
   }
 }
